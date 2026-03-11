@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Driver Monitoring Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Driver Monitoring Dashboard</h1>
+
+</header>
+
+<div class="dashboard">
+
+<div class="camera-panel">
+
+<h2>Live Camera Feed</h2>
+
+<video id="camera" autoplay></video>
+
+<div class="btn-group">
+<button onclick="startSystem()">Start</button>
+<button onclick="stopSystem()">Stop</button>
+</div>
+
+</div>
+
+
+<div class="metrics-panel">
+
+<h2>EAR Ratio</h2>
+
+<div id="earValue">0.30</div>
+
+</div>
+
+
+<div class="status-panel">
+
+<h2>Driver Status</h2>
+
+<div id="driverStatus" class="status-awake">
+Awake
+</div>
+
+</div>
+
+
+<div class="alert-panel">
+
+<h2>System Alerts</h2>
+
+<textarea id="alertBox" readonly>
+
+System Ready...
+
+</textarea>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
